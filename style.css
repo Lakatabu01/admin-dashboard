@@ -3,7 +3,9 @@
 }
 body{
   color: #f5d0fe;  
+  font-family: 'Open Sans', sans-serif;
 }
+
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -39,6 +41,9 @@ body{
    justify-self: center;
    display: flex;
 }
+.part-b p{
+    padding: 10px 20px 10px 30px;
+}
 .down{
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -51,6 +56,9 @@ body{
     gap: 15px;
     justify-self: end;
     padding-right: 30px;
+}
+.left p{
+    color: white;
 }
 button{
     width: 6em;
@@ -87,6 +95,7 @@ button{
     padding: 10px;
     background-color: #f9fafb;
     color: #701a75;
+    border-radius: 5px;
 }
 .flex1  div{
     padding: 5px;
@@ -128,4 +137,43 @@ input{
     width: 25em;
     border-radius: 2em;
     border: 1px solid #e879f9;
+    min-height: 20px;
+}
+.item{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+.item .svg{
+   display: flex;
+   justify-content: flex-end;
+   align-self: end;
+}
+.svg svg{
+    padding: 5px;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+ul li{
+    display: flex;
+    align-self: center;
+}
+ul p{
+    padding-left: 20px;
+    align-items: center;
+}
+li div{
+    display: flex;
+    align-items: center;
+}
+.sidebar div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.part-a{
+    display: flex;
+    align-items: center;
 }
