@@ -3,9 +3,7 @@
 }
 body{
   color: #f5d0fe;  
-  font-family: 'Open Sans', sans-serif;
 }
-
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -26,7 +24,7 @@ body{
 }
 .main-content{
    display: grid;
-    background-color: black;
+    background-color: #f9fafb;
     grid-template-columns: 3fr 1fr;
     padding: 20px;
     gap: 20px;
@@ -41,9 +39,6 @@ body{
    justify-self: center;
    display: flex;
 }
-.part-b p{
-    padding: 10px 20px 10px 30px;
-}
 .down{
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -56,9 +51,6 @@ body{
     gap: 15px;
     justify-self: end;
     padding-right: 30px;
-}
-.left p{
-    color: white;
 }
 button{
     width: 6em;
@@ -95,7 +87,6 @@ button{
     padding: 10px;
     background-color: #f9fafb;
     color: #701a75;
-    border-radius: 5px;
 }
 .flex1  div{
     padding: 5px;
@@ -139,41 +130,26 @@ input{
     border: 1px solid #e879f9;
     min-height: 20px;
 }
-.item{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
+.item svg{
+   border: 2px solid red;
+
 }
-.item .svg{
-   display: flex;
-   justify-content: flex-end;
-   align-self: end;
+.recent img{
+    height: 20px;
+    width: 20px;
 }
-.svg svg{
-    padding: 5px;
+.eagle{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
 }
-ul{
-    display: grid;
-    grid-template-columns: 1fr;
+.first img{
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
 }
-ul li{
-    display: flex;
-    align-self: center;
-}
-ul p{
-    padding-left: 20px;
-    align-items: center;
-}
-li div{
+.left, .part-b, .part-a{
     display: flex;
     align-items: center;
-}
-.sidebar div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.part-a{
-    display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
