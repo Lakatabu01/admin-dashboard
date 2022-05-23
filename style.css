@@ -1,5 +1,6 @@
 *, html{
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 body{
   color: #f5d0fe;  
@@ -24,7 +25,7 @@ body{
 }
 .main-content{
    display: grid;
-    background-color: #f9fafb;
+    background-color: #e8ebee;
     grid-template-columns: 3fr 1fr;
     padding: 20px;
     gap: 20px;
@@ -125,14 +126,10 @@ p{
     padding-bottom: 10px;
 }
 input{
-    width: 25em;
+    width: 28em;
     border-radius: 2em;
     border: 1px solid #e879f9;
-    min-height: 20px;
-}
-.item svg{
-   border: 2px solid red;
-
+    min-height: 30px;
 }
 .recent img{
     height: 20px;
@@ -152,4 +149,63 @@ input{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.side, .sidex, .dash-icon{
+    display: flex;
+    align-items: center;
+}
+.side p,  .sidex p, .dash-icon h2{
+    padding-left: 10px;
+}
+.part-b div, .left div{
+    padding: 10px;
+}
+.flex2 div{
+    display: flex;
+    align-items: center;
+}
+.para{
+    font-weight: bolder;
+    font-size: larger;
+}
+.recent img{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+h2:not(.db){
+    color: #701a75;
+}
+.item{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr;
+}
+.item .svg{
+    align-self: end;
+    justify-self: end;
+}
+.item:hover{
+    border-color: #e216ec;
+    box-shadow: 2px 4px 2px #701a75;
+}
+button:hover{
+    background: white;
+    border: solid 3px #701a75;
+    color: #701a75;
+    cursor: pointer;
+}
+.side:hover, .sidex:hover{
+    background-color: white;
+    padding: 5px;
+    color: #701a75;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.part-a{
+    padding-left: 35px;
+}
+.flex1:hover, .flex2:hover{
+    box-shadow: 2px 4px 2px #701a75;
 }
